@@ -1,0 +1,9 @@
+{
+  "name": "Conversational Food AI",
+  "description": "An advanced conversational AI that uses the device's camera and microphone. Users can have a real-time, spoken dialogue with the AI about the food they see. The application provides streaming text and audio responses for a fluid, natural interaction.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "prompt": ""
+}
