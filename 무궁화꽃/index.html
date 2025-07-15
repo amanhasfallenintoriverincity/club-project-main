@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 술래와 함께하는 무궁화 꽃이 피었습니다</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <h2>플레이어 상태</h2>
+        <ul id="player-list"></ul>
+    </div>
+    <div id="main-content">
+        <h1>AI 술래와 함께하는 무궁화 꽃이 피었습니다</h1>
+        <div id="container">
+            <video id="video" width="1280" height="720" autoplay playsinline muted></video>
+            <canvas id="canvas" width="1280" height="720"></canvas>
+            <div id="message-box"></div>
+        </div>
+        <div id="controls">
+            <button id="startButton">게임 시작</button>
+        </div>
+
+        <!-- 게임 결과 모달 -->
+        <div id="result-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2 id="result-message"></h2>
+                <button id="restart-button">다시 시작</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TensorFlow.js 및 PoseNet 라이브러리 로드 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+    <!-- Face-API.js 라이브러리 로드 -->
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
